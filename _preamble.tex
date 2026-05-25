@@ -1,0 +1,172 @@
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mfirstuc}
+
+\usepackage{imakeidx}
+\usepackage{algorithm2e}
+% Fonts
+\usepackage[T1]{fontenc}
+% \usepackage{tgbonum}
+\usepackage{tgpagella}
+
+
+
+\usepackage{tikz}
+\usepackage{tikz-cd}
+
+\usepackage{minted}
+\newmintinline[lean]{lean4}{bgcolor=white}
+\newminted[leancode]{lean4}{fontsize=\footnotesize}
+\usemintedstyle{tango}  % a nice, colorful theme
+
+
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+
+\usepackage[shortlabels]{enumitem}
+
+\usepackage[
+	symbol, 
+	% perpage
+]{footmisc}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+
+% table
+\usepackage{booktabs}
+% \usepackage{tablefootnote}
+
+
+
+
+
+% useful
+\usepackage{xstring}
+
+
+% # Colors - Refers Envs
+
+% ## Colors
+\usepackage[
+  dvipsnames,
+  svgnames]{xcolor}
+
+
+
+% ### Coloring
+% ### Colors Alias
+% \definecolor{mygreen}{RGB}{64, 144, 144}
+% #### Green colors
+\colorlet{mygreen}{Teal}
+
+% #### Blue colors
+% \colorlet{myblue}{ProcessBlue}
+% \colorlet{myblue}{RoyalBlue}
+\colorlet{myblue}{SteelBlue}
+
+
+
+% ## Refers, Citation
+% \usepackage{cite}
+\usepackage{hyperref}
+\hypersetup{
+	%Colours links instead of ugly boxes
+	colorlinks = true, 
+	linktocpage = true,
+	%Colour for external hyperlinks
+	urlcolor     = red, 
+	%Colour of internal links
+	linkcolor    = mygreen, 
+	%Colour of citations, could be ``red''
+	citecolor   = myblue,
+}
+
+% ### Refer with text.
+
+% BNF
+\usepackage{simplebnf}
+
+
+
+
+
+
+
+
+
+
+
+% # Math Envs
+
+% AMS Theorem
+\newcounter{paracounter}[section]
+\renewcommand{\theparacounter}{\thesection . \arbraic{paracounter}}
+
+
+
+\usepackage{amsthm}
+\newtheoremstyle{ega}% name of the style to be used
+  {\topsep}% measure of space to leave above the theorem. E.g.: 3pt
+  {\topsep}% measure of space to leave below the theorem. E.g.: 3pt
+  {\normalfont}% name of font to use in the body of the theorem
+  {0pt}% measure of space to indent
+  {}% name of head font
+  {}% punctuation between head and body
+	{0pt}% space after theorem head; " " = normal interword space
+	{\textbf{\thmnumber{(#2)} \thmname{#1}~}\textit{\thmnote{#3.~}}}
+
+\theoremstyle{ega}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{notation}[definition]{Notation}
+\newtheorem{property}[definition]{Property}
+\newtheorem{exercise}[definition]{Exercise}
+\newtheorem{examples}[definition]{Examples}
+
+\newtheorem{comment}[definition]{}
+
+\newtheorem*{Solution}{Solution}
+\newtheorem*{observation}{Observation}
+\newtheorem*{remark}{Remark}
+\newenvironment{solution}{\begin{proof}[\textbf{Solution}]}{\end{proof}}
+
+% Symbols
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% DOMAIN SPECIFIED
+
+% DOMAIN SPECIFIED PACKAGES
+
+
+
+% DOMAIN SPECIFIED SYMBOLS
+
+\newcommand{\expn}[1]{\exp\{#1\}}
+
+% set theory
+% bracket-like
+\newcommand{\pair}[1]{{\left\{#1\right\}}}
+\newcommand{\angles}[1]{{\left\langle #1 \right\rangle}}
+
+% category theory
+\newcommand{\inv}[1]{ {#1}^{-1} }
+
+
+% function
+\newcommand{\of}{\circ}
+
+
+
+
