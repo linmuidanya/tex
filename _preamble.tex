@@ -1,4 +1,6 @@
 \usepackage{geometry}
+
+\usepackage{mathtools}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
@@ -6,11 +8,15 @@
 
 \usepackage{imakeidx}
 \usepackage{algorithm2e}
+
 % Fonts
+% \usepackage[warnings-off={mathtools-overbracket,mathtools-colon}]{unicode-math}
+
 \usepackage[T1]{fontenc}
-% \usepackage{tgbonum}
 \usepackage{tgpagella}
 
+% \setmainfont{TeX Gyre Pagella}
+% \setmathfont{texgyrepagella-math}
 
 
 \usepackage{tikz}
@@ -136,37 +142,5 @@
 \newtheorem*{observation}{Observation}
 \newtheorem*{remark}{Remark}
 \newenvironment{solution}{\begin{proof}[\textbf{Solution}]}{\end{proof}}
-
-% Symbols
-
-\newcommand{\NN}{\mathbb{N}}
-\newcommand{\ZZ}{\mathbb{Z}}
-\newcommand{\QQ}{\mathbb{Q}}
-\newcommand{\RR}{\mathbb{R}}
-\newcommand{\CC}{\mathbb{C}}
-
-% DOMAIN SPECIFIED
-
-% DOMAIN SPECIFIED PACKAGES
-
-
-
-% DOMAIN SPECIFIED SYMBOLS
-
-\newcommand{\expn}[1]{\exp\{#1\}}
-
-% set theory
-% bracket-like
-\newcommand{\pair}[1]{{\left\{#1\right\}}}
-\newcommand{\angles}[1]{{\left\langle #1 \right\rangle}}
-
-% category theory
-\newcommand{\inv}[1]{ {#1}^{-1} }
-
-
-% function
-\newcommand{\of}{\circ}
-
-
 
 
