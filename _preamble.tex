@@ -10,13 +10,12 @@
 \usepackage{algorithm2e}
 
 % Fonts
-% \usepackage[warnings-off={mathtools-overbracket,mathtools-colon}]{unicode-math}
 
-\usepackage[T1]{fontenc}
-\usepackage{tgpagella}
 
-% \setmainfont{TeX Gyre Pagella}
-% \setmathfont{texgyrepagella-math}
+\usepackage[warnings-off={mathtools-colon,mathtools-overbracket}]{unicode-math}
+\setmainfont{TeX Gyre Pagella}
+% \setmainfont{TeX Gyre Schola}
+\setmathfont{texgyrepagella-math.otf}
 
 
 \usepackage{tikz}
@@ -142,7 +141,3 @@
 \newtheorem*{observation}{Observation}
 \newtheorem*{remark}{Remark}
 \newenvironment{solution}{\begin{proof}[\textbf{Solution}]}{\end{proof}}
-
-\usepackage[warnings-off={mathtools-colon,mathtools-overbracket}]{unicode-math}
-\setmathfont{texgyrepagella-math.otf}
-
